@@ -1,0 +1,28 @@
+body
+{
+    background-color: midnightblue;
+}
+.index_div
+{
+    background-color: steelblue;
+    padding: 70px 70px;
+    text-align: center;
+}
+.f_name
+{
+    background-color: chartreuse;
+    width: 50%;
+    height: 20%;
+}
+.l_name
+{
+    background-color: brown;
+    width: 50%;
+    height: 20%;
+}
+.submit
+{
+    background-color: aliceblue;
+    width: 90%;
+    height: 30%;
+}
