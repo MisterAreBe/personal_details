@@ -5,14 +5,15 @@
         <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
 <body class="welcome">
-    <div class="header">Welcome, <%= first_name%> <%= last_name%>!</div>
+    <div class="header">Welcome, <%=first_name%> <%=last_name%>!</div>
     <div class="index_div">
         <form method="post" action="/location">
             <input class="index_input" type="text" name="mail_info" placeholder="Enter where you get your mail"><br>
             <input class="index_input" type="text" name="state" placeholder="Enter the state you live in"><br>
             <input class="index_input" type="text" name="zipcode" placeholder="Enter your zipcode" pattern="\d{5}-?(\d{4})?"><br>
             <input class="index_submit" type="submit" Value="Submit">
+            <input type="hidden" name="first_name" value="<%=first_name%>">
+            <input type="hidden" name="last_name" value="<%=last_name%>">
         </form>
     </div>
-    
 </body>
