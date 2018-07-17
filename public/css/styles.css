@@ -1,6 +1,6 @@
 body
 {
-    background-color: steelblue;;
+    background-color: steelblue;
 }
 .index_div
 {
@@ -63,4 +63,25 @@ body
     background-color: #5e0606;
     border: 5px solid gold;
     color: goldenrod;
+}
+.header
+{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 500;
+    color: darkgray;
+    padding: 10px;
+    height: 10%;
+}
+.welcome
+{
+   background-image: url("/images/welcome.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.p_data
+{
+    background-color: aliceblue;
+    
 }
