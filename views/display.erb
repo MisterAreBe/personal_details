@@ -4,13 +4,32 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
-<body>
-    <div>
-        <%=first_name%>
-        <%=last_name%>
-        <%=mail_info%>
-        <%=state%>
-        <%=zipcode%>
-        <%=sum%>
+<body class="display">
+<center>
+    <div class="display_body">
+    <div class="display_head">Results are in, and...</div><br>
+    <div class="display_box">
+        <div class="display_info">
+            Your name is :</div>
+        <div class="display_result">
+            <%=first_name%> <%=last_name%></div>
+        <div class="display_info">
+            You get your mail at :</div>
+        <div class="display_result">
+            <%=mail_info%></div>
+        <div class="display_info">
+            You live in :</div>
+        <div class="display_result">
+            <%=state%></div>
+        <div class="display_info">
+            Your zipcode is :</div>
+        <div class="display_result">
+            <%=zipcode%></div>
+        <div class="display_ramble">
+            Last but not least, the sum of your three, most favorite numbers..ever..of all time is:</div>
+        <div class="sum">
+            <%=sum%>!</div>
     </div>
+    </div>
+    </center>
 </body>
