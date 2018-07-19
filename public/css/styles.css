@@ -76,7 +76,16 @@ body
 input:hover
 {
     background-color: #bdbdbd;
-    color: black;
+}
+.next:hover
+{
+    background-color: #bdbdbd;
+    color: #000000;
+}
+.previous:hover
+{
+    background-color: #bdbdbd;
+    color: #000000;
 }
 button:hover
 {
