@@ -1,15 +1,29 @@
 <head>
         <title>Personal Details</title>
         <script type="text/javascript" src="js/scripts.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,:500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="/css/styles.css">
 </head>
-<body>
-    <div>
-        <%= first_name%>
-        <%= last_name%>
-        <%= mail_info%>
-        <%= state%>
-        <%= zipcode%>
-    </div>
+<body class="fav_num">
+        <div class="header" style="text-shadow: 3px 3px 3px black">Alright, <%=first_name%> <%=last_name%>, Tell Me...</div>
+        <div class="header2" style="text-shadow: 2px 2px 2px black">What are your three, most favorite numbers..ever..of all time?</div>
+        <div class="lucky_div">
+            <form method="post" action="/fav_nums">
+                <input class="index_input" type="number" name="fav_num1" placeholder="Enter your favorite number">
+                <input class="index_input" type="number" name="fav_num2" placeholder="Enter your second favorite number">
+                <input class="index_input" type="number" name="fav_num3" placeholder="Enter your third favorite number">
+                <input class="previous" type="button" onclick="prev()" value="&laquo; Previous">
+                <input class="next" type="submit" value="Next &raquo;">
+                <input type="hidden" name="first_name" value="<%=first_name%>">
+                <input type="hidden" name="last_name" value="<%=last_name%>">
+                <input type="hidden" name="mail_info" value="<%=mail_info%>">
+                <input type="hidden" name="state" value="<%=state%>">
+                <input type="hidden" name="zipcode" value="<%=zipcode%>">
+            </form>
+        </div>
+    <script>
+        function prev() {
+        window.history.back();
+        }
+    </script>
 </body>
